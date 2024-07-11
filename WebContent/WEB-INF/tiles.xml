@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name="modilayout" template="/WEB-INF/jsp/regLayout/rlayout.jsp">
+<put-attribute name="h" value="/WEB-INF/jsp/regLayout/rheader.jsp"></put-attribute>
+<put-attribute name="m" value="/WEB-INF/jsp/regLayout/rmenu.jsp"></put-attribute>
+<put-attribute name="f" value="/WEB-INF/jsp/regLayout/rfooter.jsp"></put-attribute>
+<put-attribute name="b" value="/WEB-INF/jsp/regLayout/rbody.jsp"></put-attribute>
+</definition>
+
+<definition name="yogilayout" template="/WEB-INF/jsp/yogi/rlayout.jsp">
+<put-attribute name="yh" value="/WEB-INF/jsp/yogi/rheader.jsp"></put-attribute>
+<put-attribute name="ym" value="/WEB-INF/jsp/yogi/rmenu.jsp"></put-attribute>
+<put-attribute name="yf" value="/WEB-INF/jsp/yogi/rfooter.jsp"></put-attribute>
+<put-attribute name="yb" value="/WEB-INF/jsp/yogi/rbody.jsp"></put-attribute>
+</definition>
+
+
+<definition name="login" extends="modilayout">
+<put-attribute name="b" value="/WEB-INF/jsp/login.jsp"/>
+
+</definition>
+
+<definition name="S" extends="yogilayout">
+
+<put-attribute name="yb" value="/WEB-INF/jsp/S.jsp"/>
+</definition>
+
+
+</tiles-definitions>
